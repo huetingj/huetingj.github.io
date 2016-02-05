@@ -1,0 +1,105 @@
+body {
+  margin:0;
+  }
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: #FFF;
+  }
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  color: #020D38;
+  font-weight: 400;
+  }
+
+h3 , label {
+  font-family: 'Lora', serif;
+  font-weight:400;
+  font-size: 30px;
+  color: #020D38;
+  line-height: 1.5;
+  }
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  line-height: 1.5;
+  }
+
+.feed_container {
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+}
+
+#hello {
+  background-color: #312E47;
+  padding: 100px;
+  height: 350px;
+  }
+
+#do_this_first {
+  padding: 100px;
+  height: 250px;
+  background-color: #FFFFFC;
+  }
+
+#quote {
+  background-color: #DB2C26;
+  padding: 100px;
+  }
+
+.quote_text {
+  font-family: 'Lora', serif;
+  font-weight:400;
+  font-size: 28px;
+  color: #fff;
+  line-height: 1.5;
+  }
+
+.attribution {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  }
+
+#design_feed {
+  background-color: #DBDBE6;
+  padding: 30px;
+  text-align: center;
+  }
+
+#news_feed {
+  background-color: #8CB8C9;
+  padding: 50px;
+  text-align: center;
+  }
+
+#intention {
+  background-color: #DBDBE6;
+  padding: 30px;
+  text-align: center;
+  }
+
+textarea {
+  width:600px;
+  height:300px;
+  margin: auto;
+}
+
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
