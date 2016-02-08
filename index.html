@@ -4,10 +4,12 @@
 	<head>
 		<title>Morning Routine</title>
 
+		<!-- Don't forget to use a normalize.css or reset.css file! -->
 		<link rel="stylesheet" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 	</head>
 
+	<!-- Very nice separation & organization of your sections! -->
 	<body>
 		<section id="hello">
 			<h1>Hello, person.</h1>
@@ -18,6 +20,7 @@
 		</section>
 
 		<section id="quote">
+			<!-- The <blockquote> tag may be a better choice semantically for this quote. -->
 			<p class="quote_text">"I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living, it's a way of looking at life through the wrong end of a telescope. Which is what I do, and that enables you to laugh at life's realities."</h3>
 			<p class="attribution">- Dr. Seuss</p>
 		</section>
@@ -38,6 +41,10 @@
 				<br />
 				<textarea name="your_intention"></textarea>
 				<br />
+				<!-- 
+					Don't forget to set a "value" attribute on your submit button to control the text
+					that appears on the button
+				-->
 				<input type="submit"></input>
 			</form>
 		</section>
