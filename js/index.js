@@ -31,7 +31,7 @@ $(document).ready(function() {
 	$('.nickname').html(Nickname[randomNickname]);
 
 	// Look at the first item of Wired's xml file
-	$.get('http://www.wired.com/category/design/feed/', function (data) {
+	$.get('https://www.wired.com/category/design/feed/', function (data) {
 		var firstItem = $(data).find("channel").find("item").first();
 
 	// Pull in the title of Wired's first item
