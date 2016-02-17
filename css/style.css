@@ -60,7 +60,7 @@ p {
   padding: 50px;
   height: 550px;
   background-color: #312E47;
-  background-image: url(test.jpg);
+  background-image: url("http://hk5h1jrb20jxth2s0b2jfj.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/cat-694730_640.jpg");
   background-repeat: none;
   background-size: 100%;
   }
@@ -90,14 +90,8 @@ p {
   text-align: center;
   }
 
-#nyt_feed {
-  background-color: #8CB8C9;
-  padding: 50px;
-  text-align: center;
-  }
-
 #intention {
-  background-color: #DBDBE6;
+  background-color: #8CB8C9;
   padding: 30px;
   text-align: center;
   }
@@ -127,7 +121,9 @@ input[type="submit"] {
   padding-right: 8px; 
 }
 
-
+#feed_title {
+  background-color: #DBDBE6;
+}
 
 
 
