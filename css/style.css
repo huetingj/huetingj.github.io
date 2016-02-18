@@ -8,12 +8,26 @@ h1 {
    * inherit that font style
    */
   font-family: 'Lora', serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
   color: #FFF;
   }
 
+  .nickname {
+  font-family: 'Tangerine', cursive;
+  font-size: 170px;
+  font-weight: 400;
+  color: white;
+  }
+
 h2 {
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  color: #020D38;
+  font-weight: 400;
+  }
+
+  .wiredLink {
   font-family: 'Lora', serif;
   font-size: 40px;
   color: #020D38;
@@ -42,9 +56,13 @@ p {
 }
 
 #hello {
+
+  padding: 50px;
+  height: 550px;
   background-color: #312E47;
-  padding: 100px;
-  height: 350px;
+  background-image: url("http://hk5h1jrb20jxth2s0b2jfj.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/cat-694730_640.jpg");
+  background-repeat: none;
+  background-size: 100%;
   }
 
 #do_this_first {
@@ -61,32 +79,19 @@ p {
 .quote_text {
   font-family: 'Lora', serif;
   font-weight:400;
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   line-height: 1.5;
   }
 
-.attribution {
-  font-family: 'Lora', serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #fff;
-  }
-
-#design_feed {
+#wired_feed {
   background-color: #DBDBE6;
   padding: 30px;
   text-align: center;
   }
 
-#news_feed {
-  background-color: #8CB8C9;
-  padding: 50px;
-  text-align: center;
-  }
-
 #intention {
-  background-color: #DBDBE6;
+  background-color: #8CB8C9;
   padding: 30px;
   text-align: center;
   }
@@ -107,3 +112,21 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
 }
+
+.first_character { 
+  float: left; 
+  color: #312E47; 
+  font-size: 95px; 
+  line-height: 60px; 
+  padding-right: 8px; 
+}
+
+#feed_title {
+  background-color: #DBDBE6;
+}
+
+
+
+
+
+
