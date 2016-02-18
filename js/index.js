@@ -15,7 +15,7 @@ $(document).ready(function() {
 	Quote[9] = "Controversy is part of the nature of art and creativity.";
 
 	// Randomly present the quotes
-	var randomQuote = Math.floor(Math.random()*Quote.length);
+	var randomQuote = Math.floor(Math.random()*Quote.length); // <-- very nice!!
 	$('.quote_text').html(Quote[randomQuote]);
 
 	// Store the nicknames
