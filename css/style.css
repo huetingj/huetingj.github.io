@@ -57,7 +57,7 @@ h3 , label {
 #hello {
 
   padding: 50px;
-  height: 550px;
+  height: 500px;
   background-color: #312E47;
   background-image: url("test.jpg");
   background-repeat: none;
@@ -77,23 +77,23 @@ h3 , label {
   }
 
 #quote {
-  background-color: #020D38;
+  background-color: #fff;
   padding: 125px 75px;
+  width: 75%;
   }
 
 .quote_text {
   font-family: 'Lora', serif;
   font-weight:400;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   line-height: 1.5;
   }
 
 
 #intention {
-  background-color: #8CB8C9;
-  padding: 30px;
-  text-align: center;
+  background-color: #yellow;
+  padding: 75px;
   }
 
 textarea {
@@ -121,9 +121,6 @@ input[type="submit"] {
   padding-right: 8px; 
 }
 
-#rss_links {
-  background-color: #DBDBE6;
-}
 
 .tag {
   font-size: 12px;
@@ -154,7 +151,6 @@ p {
 
 #deed {
   padding: 75px;
-  background-color: yellow;
   }
 
 .first_text {

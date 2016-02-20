@@ -3,16 +3,16 @@ $(document).ready(function() {
 
 	// Store the quotes
 	var Quote = new Array();
-	Quote[0] = "Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable.";
-	Quote[1] = "I do not want to get to the end of my life and find that I just lived the length of it. I want to have lived the width of it as well.";
-	Quote[2] = "An essential aspect of creativity is not being afraid to fail.";
-	Quote[3] = "You teach people how to treat you by what you allow, what you stop, and what you reinforce.";
-	Quote[4] = "What seems to us as bitter trials are often blessings in disguise.";
-	Quote[5] = "It is not selfish to love yourself, take care of yourself, and to make your happiness a priority.";
-	Quote[6] = "Wisdom is merely the movement from fighting life to embracing it.";
-	Quote[7] = "Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong.";
-	Quote[8] = "Worry is a total waste of time. It does not change anything. All is does it steal your joy and keep you very busy doing nothing.";
-	Quote[9] = "Controversy is part of the nature of art and creativity.";
+	Quote[0] = "'Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable.'";
+	Quote[1] = "'I do not want to get to the end of my life and find that I just lived the length of it. I want to have lived the width of it as well.'";
+	Quote[2] = "'An essential aspect of creativity is not being afraid to fail.'";
+	Quote[3] = "'You teach people how to treat you by what you allow, what you stop, and what you reinforce.'";
+	Quote[4] = "'What seems to us as bitter trials are often blessings in disguise.'";
+	Quote[5] = "'It is not selfish to love yourself, take care of yourself, and to make your happiness a priority.'";
+	Quote[6] = "'Wisdom is merely the movement from fighting life to embracing it.'";
+	Quote[7] = "'Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong.'";
+	Quote[8] = "'Worry is a total waste of time. It does not change anything. All is does it steal your joy and keep you very busy doing nothing.'";
+	Quote[9] = "'Controversy is part of the nature of art and creativity.'";
 
 	// Randomly present the quotes
 	var randomQuote = Math.floor(Math.random()*Quote.length);
@@ -83,6 +83,7 @@ $(document).ready(function() {
 	deed[31] = "push the boundaries.";
 	deed[32] = "say good morning to someone.";
 	deed[33] = "take three deep breaths when you feel frustrated.";
+	deed[34] = "listen to a podcast.";
 
 	// Randomly present the nicknames
 	var randomDeed = Math.floor(Math.random()*deed.length);
