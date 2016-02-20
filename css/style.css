@@ -14,10 +14,11 @@ h1 {
   }
 
   .nickname {
-  font-family: 'Tangerine', cursive;
-  font-size: 170px;
+  font-family: 'Lora', serif;
+  font-size: 75px;
   font-weight: 400;
-  color: white;
+  color: #FFF;
+  width: 600px;
   }
 
 h2 {
@@ -42,11 +43,9 @@ h3 , label {
   line-height: 1.5;
   }
 
-p {
-  font-family: 'Lora', serif;
-  font-size: 22px;
-  line-height: 1.5;
-  }
+.reversed {
+  color: white;
+}
 
 .feed_container {
   width: 900px;
@@ -60,20 +59,26 @@ p {
   padding: 50px;
   height: 550px;
   background-color: #312E47;
-  background-image: url("http://hk5h1jrb20jxth2s0b2jfj.wpengine.netdna-cdn.com/wp-content/uploads/2015/06/cat-694730_640.jpg");
+  background-image: url("test.jpg");
   background-repeat: none;
   background-size: 100%;
   }
 
-#do_this_first {
-  padding: 100px;
-  height: 250px;
+#mindful {
+  padding: 75px;
+  height: 900px;
   background-color: #FFFFFC;
   }
 
+  .mindful_text {
+    font-size: 30px;
+    width: 75%;
+    font-family: 'Lora', serif;
+  }
+
 #quote {
-  background-color: #DB2C26;
-  padding: 100px;
+  background-color: #020D38;
+  padding: 125px 75px;
   }
 
 .quote_text {
@@ -84,11 +89,6 @@ p {
   line-height: 1.5;
   }
 
-#wired_feed {
-  background-color: #DBDBE6;
-  padding: 30px;
-  text-align: center;
-  }
 
 #intention {
   background-color: #8CB8C9;
@@ -121,12 +121,61 @@ input[type="submit"] {
   padding-right: 8px; 
 }
 
-#feed_title {
+#rss_links {
   background-color: #DBDBE6;
 }
 
+.tag {
+  font-size: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 75px;
+  padding: 10px;
+}
 
+.feedLink {
+  font-size: 18px;
+}
 
+.organizedPic {
+  height: 1000px;
+}
+
+.deed_text {
+    font-size: 40px;
+    font-family: 'Lora', serif;
+}
+
+p {
+  font-size: 40px;
+  font-family: 'Lora' , serif;
+}
+
+#deed {
+  padding: 75px;
+  background-color: yellow;
+  }
+
+.first_text {
+    font-size: 40px;
+    font-family: 'Lora', serif;
+    width: 75%;
+}
+
+#first_things {
+  padding: 125px 75px;
+  background-color: yellow;
+  }
+
+#mid_photo {
+
+  padding: 50px;
+  height: 550px;
+  background-image: url("veggies_2.jpg");
+  background-repeat: none;
+  background-size: 100%;
+}
 
 
 

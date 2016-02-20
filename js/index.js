@@ -20,11 +20,11 @@ $(document).ready(function() {
 
 	// Store the nicknames
 	var Nickname = new Array();
-	Nickname[0] = "honey bunches";
-	Nickname[1] = "shmookie poo";
-	Nickname[2] = "pookie";
-	Nickname[3] = " fierce tiger";
-	Nickname[4] = "cool person";
+	Nickname[0] = "What it do, boo.";
+	Nickname[1] = "I'll tell you what I want, what I really really want.";
+	Nickname[2] = "Have fun. Buck up. Live the dream.";
+	Nickname[3] = "I'm from the Lou and I'm proud.";
+	Nickname[4] = "I'm from the Lou and I'm proud.";
 
 	// Randomly present the nicknames
 	var randomNickname = Math.floor(Math.random()*Nickname.length);
@@ -42,9 +42,54 @@ $(document).ready(function() {
 		$(".wiredLink").attr("href", href + (firstItem.find("link").text()));
     });
 
-});
 
-   	
+
+	$.get('https://thingsorganizedneatly.tumblr.com/rss', function (data) {
+		var firstOrganizedItem = $(data).find("channel").find("item").first().find("description");
+		console.log();
+    });
+
+	var deed = new Array();
+	deed[0] = "be patient and kind to yourself.";
+	deed[1] = "TREAT YO SELF.";
+	deed[2] = "get some fresh air and go for a walk.";
+	deed[3] = "get away from your desk during lunch.";
+	deed[4] = "post a thank you note on the Intranet.";
+	deed[6] = "write a list of things you are grateful for.";
+	deed[7] = "give $20 to someone in need.";
+	deed[8] = "compliment a stranger.";
+	deed[9] = "ask a coworker to get coffee.";
+	deed[10] = "post a compliment to a github issue.";
+	deed[11] = "eat mostly vegetables for lunch.";
+	deed[12] = "send a friend a message about a childhood memory.";
+	deed[13] = "reward yourself.";
+	deed[14] = "hide money in the pocket of a coat.";
+	deed[15] = "stretch your body.";
+	deed[16] = "write down everything on your mind. Take a step back so you can take a fresh look.";
+	deed[17] = "send a note to the management team about something they are doing well.";
+	deed[18] = "give people the benefit of the doubt.";
+	deed[19] = "compliment a coworker.";
+	deed[20] = "write a note to your future self.";
+	deed[21] = "get some exercise.";
+	deed[22] = "go to bed before 10:30pm.";
+	deed[23] = "do your work efficiently. Leave work on time.";
+	deed[24] = "be on time all day today.";
+	deed[25] = "drink eight glasses of water.";
+	deed[26] = "encourage somebody.";
+	deed[27] = "listen and pay attention completely.";
+	deed[28] = "transfer money to your savings account.";
+	deed[29] = "be honest. Speak up.";
+	deed[30] = "commit to getting a task done.";
+	deed[31] = "push the boundaries.";
+	deed[32] = "say good morning to someone.";
+	deed[33] = "take three deep breaths when you feel frustrated.";
+
+	// Randomly present the nicknames
+	var randomDeed = Math.floor(Math.random()*deed.length);
+	$('.deed_text').html(deed[randomDeed]);
+
+
+});
 
 
 
