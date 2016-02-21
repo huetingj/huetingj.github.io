@@ -3,16 +3,16 @@ $(document).ready(function() {
 
 	// Store the quotes
 	var Quote = new Array();
-	Quote[0] = "'Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable.'";
-	Quote[1] = "'I do not want to get to the end of my life and find that I just lived the length of it. I want to have lived the width of it as well.'";
-	Quote[2] = "'An essential aspect of creativity is not being afraid to fail.'";
-	Quote[3] = "'You teach people how to treat you by what you allow, what you stop, and what you reinforce.'";
-	Quote[4] = "'What seems to us as bitter trials are often blessings in disguise.'";
-	Quote[5] = "'It is not selfish to love yourself, take care of yourself, and to make your happiness a priority.'";
-	Quote[6] = "'Wisdom is merely the movement from fighting life to embracing it.'";
-	Quote[7] = "'Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong.'";
-	Quote[8] = "'Worry is a total waste of time. It does not change anything. All is does it steal your joy and keep you very busy doing nothing.'";
-	Quote[9] = "'Controversy is part of the nature of art and creativity.'";
+	Quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
+	Quote[1] = '"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they did not really do it, they just saw something. It seemed obvious to them after a while. That is because they were able to connect experiences they have had and synthesize new things." - Steve Jobs';
+	Quote[2] = '"Creativity is the process of having original ideas that have value. It is a process. It is not random." - Ken Robinson';
+	Quote[3] = '"The difference between science and the arts is not that they are different sides of the same coin even, or even different parts of the same continuum, but rather, they are manifestations of the same thing. The arts and sciences are avatars of human creativity." - Mae Jemison';
+	Quote[4] = '"Passion is one great force that unleashes creativity, because if you are passionate about something, then you are more willing to take risks." - Yo-Yo Ma';
+	Quote[5] = '"Creativity is a habit, and the best creativity is the result of good work habits." - Twyla Tharp';
+	Quote[6] = '"Everything that is created comes out of silence. Your thoughts emerge from the nothingness of silence. Your words come out of this void. Your very essence emerged from emptiness. All creativity requires some stillness." - Wayne Dyer';
+	Quote[7] = '"Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong."';
+	Quote[8] = '"I believe this passionately: that we do not grow into creativity, we grow out of it. Or rather, we get educated out if it." - Ken Robinson';
+	Quote[9] = '"Creativity is a spark. It can be excruciating when we are rubbing two rocks together and getting nothing. And it can be intensely satisfying when the flame catches and a new idea sweeps around the world." - Jonah Lehrer';
 
 	// Randomly present the quotes
 	var randomQuote = Math.floor(Math.random()*Quote.length);
@@ -30,23 +30,42 @@ $(document).ready(function() {
 	var randomNickname = Math.floor(Math.random()*Nickname.length);
 	$('.nickname').html(Nickname[randomNickname]);
 
+
+
 	// Look at the first item of Wired's xml file
 	$.get('https://www.wired.com/category/design/feed/', function (data) {
-		var firstItem = $(data).find("channel").find("item").first();
+		var firstItemWiredOne = $(data).find("channel").find("item").first();
 
 	// Pull in the title of Wired's first item
-		$(".wiredLink").append(firstItem.find("title").text());
+		$(".wiredLinkOne").append(firstItemWiredOne.find("title").text());
 
 	// Pull in the link of the Wired item
-		var href = $(".wiredLink").attr("href");
-		$(".wiredLink").attr("href", href + (firstItem.find("link").text()));
+		var hrefWiredOne = $(".wiredLinkOne").attr("href");
+		$(".wiredLinkOne").attr("href", hrefWiredOne + (firstItemWiredOne.find("link").text()));
     });
 
+		// Look at the first item of Wired's xml file
+	$.get('http://www.wired.com/category/gear/feed/', function (data) {
+		var firstItemWiredTwo = $(data).find("channel").find("item").first();
 
+	// Pull in the title of Wired's first item
+		$(".wiredLinkTwo").append(firstItemWiredTwo.find("title").text());
 
-	$.get('https://thingsorganizedneatly.tumblr.com/rss', function (data) {
-		var firstOrganizedItem = $(data).find("channel").find("item").first().find("description");
-		console.log();
+	// Pull in the link of the Wired item
+		var hrefWiredTwo = $(".wiredLinkTwo").attr("href");
+		$(".wiredLinkTwo").attr("href", hrefWiredTwo + (firstItemWiredTwo.find("link").text()));
+    });
+
+		// Look at the first item of Wired's xml file
+	$.get('http://www.wired.com/category/photo/feed/', function (data) {
+		var firstItemWiredThree = $(data).find("channel").find("item").first();
+
+	// Pull in the title of Wired's first item
+		$(".wiredLinkThree").append(firstItemWiredThree.find("title").text());
+
+	// Pull in the link of the Wired item
+		var hrefWiredThree = $(".wiredLinkThree").attr("href");
+		$(".wiredLinkThree").attr("href", hrefWiredThree + (firstItemWiredThree.find("link").text()));
     });
 
 	var deed = new Array();
@@ -88,6 +107,11 @@ $(document).ready(function() {
 	// Randomly present the nicknames
 	var randomDeed = Math.floor(Math.random()*deed.length);
 	$('.deed_text').html(deed[randomDeed]);
+
+
+
+
+
 
 
 });

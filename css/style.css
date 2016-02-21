@@ -57,17 +57,17 @@ h3 , label {
 #hello {
 
   padding: 50px;
-  height: 500px;
+  height: 620px;
   background-color: #312E47;
-  background-image: url("test.jpg");
+  background-image: url("dino.jpg");
   background-repeat: none;
   background-size: 100%;
   }
 
 #mindful {
-  padding: 75px;
-  height: 900px;
-  background-color: #FFFFFC;
+  padding: 150px 75px;
+  background-image: url("knitting250px_@2X.png");
+  background-repeat: repeat;
   }
 
   .mindful_text {
@@ -77,17 +77,17 @@ h3 , label {
   }
 
 #quote {
-  background-color: #fff;
-  padding: 125px 75px;
-  width: 75%;
+  background-color: #FA7F05;
+  padding: 100px 75px;
   }
 
 .quote_text {
   font-family: 'Lora', serif;
   font-weight:400;
-  font-size: 30px;
-  color: #000;
+  font-size: 40px;
+  color: #fff;
   line-height: 1.5;
+  width: 75%;
   }
 
 
@@ -142,6 +142,7 @@ input[type="submit"] {
 .deed_text {
     font-size: 40px;
     font-family: 'Lora', serif;
+    color: white;
 }
 
 p {
@@ -151,6 +152,11 @@ p {
 
 #deed {
   padding: 75px;
+  background-color: #000;
+  }
+
+  #rss {
+    padding: 75px;
   }
 
 .first_text {
