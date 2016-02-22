@@ -11,63 +11,65 @@
 		<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 
 
+
 	</head>
 
 	<body>
-		<section id="hello">
-			<h1 class="nickname"></h1>
-		</section>
+		<div id="big_container">
+			<section id="hello">
+				<h1 class="nickname"></h1>
+			</section>
 
-		<section id="mindful">
-			<h2>Ah, the mind is a beautiful thing</h2>
-			<br/>
-			<p class="mindful_text">Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go.</p>
-		</section>
+			<section id="mindful" class="fade2">
+				<h2>Ah, the mind is a beautiful thing</h2>
+				<br/>
+				<p class="mindful_text">Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go.</p>
+			</section>
 
-		<section id="quote">
-			<p class="quote_text"></p>
-		</section>
+			<section id="quote" class="fade2">
+				<p class="quote_text"></p>
+			</section>
 
-		<section id="rss">
-			<h2>Read all of the things.</h2>
-			<hr>
-			<a class= "wiredLinkOne feedLink" href="" target="_blank"></a>
-			<hr>
-			<a class= "wiredLinkTwo feedLink" href="" target="_blank"></a>
-			<hr>
-			<a class= "wiredLinkThree feedLink" href="" target="_blank"></a>
-			<hr>
-		</section>
+			<section id="rss" class="fade2">
+				<h2>Read all of the things.</h2>
+				<hr>
+				<a class= "wiredLinkOne feedLink" href="" target="_blank"></a>
+				<hr>
+				<a class= "wiredLinkTwo feedLink" href="" target="_blank"></a>
+				<hr>
+				<a class= "wiredLinkThree feedLink" href="" target="_blank"></a>
+				<hr>
+			</section>
 
-		<div id="mid_photo"></div>
+			<section id="deed" class="fade2">
+				<p>Today, <span class="deed_text"></span></p>
+			</section>
 
-
-		<section id="deed">
-			<p>Today, <span class="deed_text"></span></p>
-		</section>
-
-		<section id="intention">
-			<form>
+<!--
+			<section>
 				<h2>And set an intention.</h2>
-				<textarea name="your_intention"></textarea>
-				<br />
-				<!-- 
-					Don't forget to set a "value" attribute on your submit button to control the text
-					that appears on the button
-				-->
-				<input type="submit"></input>
-			</form>
+				<form id "intention_form">
+					<textarea id="your_intention"></textarea><input type="submit" value="Submit">
+				</form>
+
+				<p id="show_intention"></p>
+			</section>
+		-->
+		<section id="intention_form">
+				<form id="new_intention">
+					<h2>Set an intention</h2>
+					<textarea id="newItem"></textarea><button id="add">Submit</button>
+				</form>
 		</section>
 
+					<p id="todo"></p>
+			
+			<script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
+		  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
 
-
-
-
-		<script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	  	<script src="js/index.js"></script>
-
-
+		</div>
 
 	</body>
 

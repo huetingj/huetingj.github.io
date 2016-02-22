@@ -1,6 +1,40 @@
 
 $(document).ready(function() {
 
+	$('#new_intention').on('submit', addNewItem);
+
+	function addNewItem(event) {
+	
+	// Prevent page reload
+	event.preventDefault();
+	
+	// Get the text the user entered
+	var newItem = $('#newItem').val();
+
+	// window.location.assign("intention.html"); 
+
+		// Add an <li> with that text to the <ul>
+	$('#todo').append(newItem);
+
+	$(this).hide(); 
+}
+
+
+//	$( "#intention_form" ).submit(function( event ) {
+ // alert( "message" );
+ // event.preventDefault();
+// });
+	
+	// Prevent page reload
+	// event.preventDefault();
+	
+	// Get the text the user entered
+	// var newIntention = $('#your_intention').val();
+	
+	// Add an <li> with that text to the <ul>
+	// $('#show_intention').append(newIntention);
+
+
 	// Store the quotes
 	var Quote = new Array();
 	Quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
@@ -30,6 +64,18 @@ $(document).ready(function() {
 	var randomNickname = Math.floor(Math.random()*Nickname.length);
 	$('.nickname').html(Nickname[randomNickname]);
 
+
+	var backgroundImage = new Array();
+	backgroundImage[0] = 'url(images/dino.jpg)';
+	backgroundImage[1] = 'url(images/dino_1.jpg)';
+	backgroundImage[2] = 'url(images/dino_2.jpg)';
+	backgroundImage[3] = 'url(images/dino_3.jpg)';
+	backgroundImage[4] = 'url(images/dino_4.jpg)';
+	backgroundImage[5] = 'url(images/dog_1.jpg)';
+
+	// Randomly present the nicknames
+	var randomBackgroundImage = Math.floor(Math.random()*backgroundImage.length);
+	$('#hello').css('background' , backgroundImage[randomBackgroundImage]);
 
 
 	// Look at the first item of Wired's xml file
@@ -108,6 +154,32 @@ $(document).ready(function() {
 	var randomDeed = Math.floor(Math.random()*deed.length);
 	$('.deed_text').html(deed[randomDeed]);
 
+
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function() {
+
+       /* Every time the window is scrolled ... */
+    	$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + ($(this).outerHeight() / 3.0);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+	    
+	});
 
 
 
