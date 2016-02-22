@@ -54,11 +54,13 @@ $(document).ready(function() {
 
 	// Store the nicknames
 	var Nickname = new Array();
-	Nickname[0] = "What it do, boo.";
-	Nickname[1] = "I'll tell you what I want, what I really really want.";
-	Nickname[2] = "Have fun. Buck up. Live the dream.";
-	Nickname[3] = "I'm from the Lou and I'm proud.";
-	Nickname[4] = "I'm from the Lou and I'm proud.";
+	Nickname[0] = "Hey shorty. What's happenin.";
+	Nickname[1] = "Ugh morning ughhhhh coffeeeee neeeedd";
+	Nickname[2] = "Good morning, sunshine.";
+	Nickname[3] = "What's cookin' good lookin'";
+	Nickname[4] = "Aw. Hell. Naw.";
+	Nickname[5] = "Oh, you look so fresh and so fly.";
+	Nickname[6] = "So morning! So awake! Such ideas!";
 
 	// Randomly present the nicknames
 	var randomNickname = Math.floor(Math.random()*Nickname.length);

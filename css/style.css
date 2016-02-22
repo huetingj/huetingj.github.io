@@ -94,19 +94,24 @@ h3 , label {
   padding: 75px;
   }
 
+  #intention_form {
+    padding: 75px;
+
+  }
+
 textarea {
   width:600px;
   height:300px;
   margin: auto;
 }
 
-input[type="submit"] {
-  background-color: blue;
+#add {
+  background-color: #2013AD;
   color: white;
-  width: 150px;
+  width: 100px;
   padding: 10px;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
 }
@@ -149,8 +154,8 @@ p {
 }
 
 #deed {
-  padding: 75px;
-  background-color: #000;
+  padding: 125px 75px;
+  background-color: #F20A6B;
   }
 
   #rss {
@@ -192,11 +197,11 @@ p {
 
 
 #todo {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Lora', serif;
     width: 75%;
-    color: red;
-    padding: 100px;
+    color: #F20A6B;
+    padding: 0 75px 200px 75px;
 
 }
 
