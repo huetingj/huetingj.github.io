@@ -1,5 +1,6 @@
 body {
   margin:0;
+  font-family: 'Lora', serif;
   }
 
 #big_container {
@@ -11,14 +12,12 @@ h1 {
    * less code to set it in your body selector above.  The rest of the page elements will
    * inherit that font style
    */
-  font-family: 'Lora', serif;
   font-size: 50px;
   font-weight: 400;
   color: #FFF;
   }
 
   .nickname {
-  font-family: 'Lora', serif;
   font-size: 75px;
   font-weight: 400;
   color: #FFF;
@@ -26,21 +25,18 @@ h1 {
   }
 
 h2 {
-  font-family: 'Lora', serif;
   font-size: 40px;
   color: #020D38;
   font-weight: 400;
   }
 
   .wiredLink {
-  font-family: 'Lora', serif;
   font-size: 40px;
   color: #020D38;
   font-weight: 400;
   }
 
 h3 , label {
-  font-family: 'Lora', serif;
   font-weight:400;
   font-size: 30px;
   color: #020D38;
@@ -69,18 +65,16 @@ h3 , label {
 
 #mindful {
   padding: 75px;
-  background-repeat: repeat;
   }
 
   .mindful_text {
     font-size: 30px;
     width: 75%;
-    font-family: 'Lora', serif;
+    color: black;
   }
 
 
 .quote_text {
-  font-family: 'Lora', serif;
   font-weight:400;
   font-size: 40px;
   color: #fff;
@@ -89,13 +83,10 @@ h3 , label {
   }
 
 
-#intention {
-  background-color: #yellow;
-  padding: 75px;
-  }
 
   #intention_form {
     padding: 75px;
+
 
   }
 
@@ -132,10 +123,12 @@ textarea {
   text-align: center;
   width: 75px;
   padding: 10px;
+  height: 20px;
 }
 
 .feedLink {
-  font-size: 18px;
+  font-size: 20px;
+  color: #020D38;
 }
 
 .organizedPic {
@@ -144,13 +137,11 @@ textarea {
 
 .deed_text {
     font-size: 40px;
-    font-family: 'Lora', serif;
     color: white;
 }
 
 p {
   font-size: 40px;
-  font-family: 'Lora' , serif;
 }
 
 #deed {
@@ -164,7 +155,6 @@ p {
 
 .first_text {
     font-size: 40px;
-    font-family: 'Lora', serif;
     width: 75%;
 }
 
@@ -173,14 +163,6 @@ p {
   background-color: yellow;
   }
 
-#mid_photo {
-
-  padding: 50px;
-  height: 550px;
-  background-image: url("veggies_2.jpg");
-  background-repeat: none;
-  background-size: 100%;
-}
 
 .fade {
   opacity: 1;
@@ -198,7 +180,6 @@ p {
 
 #todo {
     font-size: 40px;
-    font-family: 'Lora', serif;
     width: 75%;
     color: #F20A6B;
     padding: 0 75px 200px 75px;

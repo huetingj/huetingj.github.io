@@ -19,22 +19,6 @@ $(document).ready(function() {
 	$(this).hide(); 
 }
 
-
-//	$( "#intention_form" ).submit(function( event ) {
- // alert( "message" );
- // event.preventDefault();
-// });
-	
-	// Prevent page reload
-	// event.preventDefault();
-	
-	// Get the text the user entered
-	// var newIntention = $('#your_intention').val();
-	
-	// Add an <li> with that text to the <ul>
-	// $('#show_intention').append(newIntention);
-
-
 	// Store the quotes
 	var Quote = new Array();
 	Quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
@@ -65,6 +49,17 @@ $(document).ready(function() {
 	// Randomly present the nicknames
 	var randomNickname = Math.floor(Math.random()*Nickname.length);
 	$('.nickname').html(Nickname[randomNickname]);
+
+	var mindfulness = new Array();
+	mindfulness[0] = "Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go.";
+	mindfulness[1] = "Focus on an object nearby for a minute or two. Literally do nothing but look at it. Imagine you're seeing it for the first time, so really explore it. Think about its purpose, past, etc. See it differently than you perhaps do on any other day.";
+	mindfulness[2] = "Think about a simple part of every day, such as typing on your computer. When you're doing this, stop for minute and observe what the sounds are, how it feels, where you are, what the purpose of it is, etc. Be mindful of this activity throughout the day.";
+	mindfulness[3] = "Open Spotify and play a song you've never heard before. Close your eyes. Listen closely to all the sounds and ignore your own judgements.";
+	mindfulness[4] = "Pay attention to the details of an everyday activity. Don't rush through it. Try to see this familiar task in a new way.";
+	mindfulness[5] = "Write down five things in your day that usually go unappreciated. They can be objects, people, whatever. Think about how they came to be, what life would be like without them, their details, etc. Appreciate them throughout the day.";
+
+	var randomMindfulness = Math.floor(Math.random()*mindfulness.length);
+	$('.mindful_text').html(mindfulness[randomMindfulness]);
 
 
 	var backgroundImage = new Array();
