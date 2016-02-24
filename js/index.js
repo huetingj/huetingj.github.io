@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 
 	// Look at the first item of Wired's xml file
-	$.get('https://www.smashingmagazine.com/feed/', function (data) {
+	$.get('http://www.wired.com/category/design/feed/', function (data) {
 		var firstItemWiredOne = $(data).find("channel").find("item").first();
 
 	// Pull in the title of Wired's first item
