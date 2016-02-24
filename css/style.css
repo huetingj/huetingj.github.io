@@ -3,95 +3,67 @@ body {
   font-family: 'Lora', serif;
   }
 
-#big_container {
-  width: 1200px;
-  margin: 0 50px;
+
 }
 h1 {
-  /* If you are going to use Lora as your font for the entire page, it would be easier / 
-   * less code to set it in your body selector above.  The rest of the page elements will
-   * inherit that font style
-   */
-  font-size: 50px;
-  font-weight: 400;
   color: #FFF;
   }
 
   .nickname {
-  font-size: 75px;
-  font-weight: 400;
   color: #FFF;
-  width: 600px;
+  padding: 8%;
+  width: 50%;
+  font-size: 5em;
+
   }
 
 h2 {
-  font-size: 40px;
   color: #020D38;
-  font-weight: 400;
-  }
-
-  .wiredLink {
-  font-size: 40px;
-  color: #020D38;
-  font-weight: 400;
-  }
-
-h3 , label {
-  font-weight:400;
-  font-size: 30px;
-  color: #020D38;
-  line-height: 1.5;
+  font-size: 3em;
   }
 
 .reversed {
   color: white;
 }
 
-.feed_container {
-  width: 900px;
-  height: 500px;
-  background-color: white;
-  margin: auto;
+
+.background_image {
+  background-image: url("");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
 }
 
-#hello {
-
-  padding: 50px;
-  width: 1200px;
-  height: 750px;
-  background-image: url("");
-  background-repeat: none;
-  }
 
 #mindful {
-  padding: 75px;
+  padding: 8%;
   }
 
   .mindful_text {
-    font-size: 30px;
     width: 75%;
     color: black;
   }
 
 
 .quote_text {
-  font-weight:400;
-  font-size: 40px;
   color: #fff;
   line-height: 1.5;
   width: 75%;
   }
 
+  .big_p {
+  font-size: 2.5em;
+  }
+
 
 
   #intention_form {
-    padding: 75px;
-
+    padding: 8%;
 
   }
 
 textarea {
-  width:600px;
+  width:65%;
   height:300px;
   margin: auto;
 }
@@ -102,71 +74,30 @@ textarea {
   width: 100px;
   padding: 10px;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 1.25em;
   border: none;
   border-radius: 5px;
 }
 
-.first_character { 
-  float: left; 
-  color: #312E47; 
-  font-size: 95px; 
-  line-height: 60px; 
-  padding-right: 8px; 
-}
-
-
-.tag {
-  font-size: 12px;
-  color: white;
-  background-color: black;
-  text-align: center;
-  width: 75px;
-  padding: 10px;
-  height: 20px;
-}
-
 .feedLink {
-  font-size: 20px;
+  font-size: 1.5em;
   color: #020D38;
 }
 
-.organizedPic {
-  height: 1000px;
-}
-
-.deed_text {
-    font-size: 40px;
-    color: white;
-}
 
 p {
-  font-size: 40px;
+  font-size: 2em;
 }
 
 #deed {
-  padding: 125px 75px;
+  padding: 8%;
   background-color: #F20A6B;
   }
 
   #rss {
-    padding: 75px;
+    padding: 8%;
   }
 
-.first_text {
-    font-size: 40px;
-    width: 75%;
-}
-
-#first_things {
-  padding: 125px 75px;
-  background-color: yellow;
-  }
-
-
-.fade {
-  opacity: 1;
-}
 
 .fade2 {
   opacity: 0;
@@ -174,19 +105,21 @@ p {
 
 #quote {
   background-color: #FA7F05;
-  padding: 100px 75px;
+  padding: 8%;
   }
 
 
 #todo {
-    font-size: 40px;
+    font-size: 4em;
     width: 75%;
     color: #F20A6B;
-    padding: 0 75px 200px 75px;
+    padding: 0 0 8% 8%;
 
 }
 
-
+hr {
+  color:black;
+}
 
 
 

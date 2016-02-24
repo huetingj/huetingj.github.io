@@ -72,11 +72,11 @@ $(document).ready(function() {
 
 	// Randomly present the nicknames
 	var randomBackgroundImage = Math.floor(Math.random()*backgroundImage.length);
-	$('#hello').css('background' , backgroundImage[randomBackgroundImage]);
+	$('.background_image').css('background-image' , backgroundImage[randomBackgroundImage]);
 
 
 	// Look at the first item of Wired's xml file
-	$.get('https://www.wired.com/category/design/feed/', function (data) {
+	$.get('https://www.smashingmagazine.com/feed/', function (data) {
 		var firstItemWiredOne = $(data).find("channel").find("item").first();
 
 	// Pull in the title of Wired's first item

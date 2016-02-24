@@ -4,9 +4,9 @@
 	<head>
 		<title>Morning Routine</title>
 
-		<link rel="stylesheet" href="css/reset.css" media="screen" type="text/css">
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css"> 
 		<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 
@@ -15,8 +15,14 @@
 	</head>
 
 	<body>
+
+		<div class="container-fluid">
+
 			<section id="hello">
+				<div class="background_image">
 				<h1 class="nickname"></h1>
+				</div>
+
 			</section>
 
 			<section id="mindful" class="fade2">
@@ -26,7 +32,7 @@
 			</section>
 
 			<section id="quote" class="fade2">
-				<p class="quote_text"></p>
+				<blockquote class="quote_text big_p"></blockquote>
 			</section>
 
 			<section id="rss">
@@ -41,20 +47,11 @@
 			</section>
 
 			<section id="deed" class="fade2 reversed">
-				<p>Today, <span class="deed_text"></span></p>
+				<p class="big_p">Today, <span class="deed_text"></span></p>
 			</section>
 
-<!--
-			<section>
-				<h2>And set an intention.</h2>
-				<form id "intention_form">
-					<textarea id="your_intention"></textarea><input type="submit" value="Submit">
-				</form>
 
-				<p id="show_intention"></p>
-			</section>
-		-->
-		<section id="intention_form" class="fade2">
+			<section id="intention_form" class="fade2">
 				<form id="new_intention">
 					<h2>Set an intention for the day</h2>
 					<br>
@@ -62,14 +59,15 @@
 					<br>
 					<button id="add">Submit</button>
 				</form>
-		</section>
+			</section>
 
-					<p id="todo"></p>
+			<p id="todo"></p>
+		</div>
 			
-			<script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
-		  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-		<script src="js/index.js" type="text/javascript"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<script src="js/index.js" type="text/javascript"></script>
+
 
 	</body>
 
