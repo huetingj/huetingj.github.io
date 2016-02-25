@@ -1,55 +1,56 @@
 
 $(document).ready(function() {
 
+	// Submitting an intention
 	$('#new_intention').on('submit', addNewItem);
 
 	function addNewItem(event) {
 	
-	// Prevent page reload
 	event.preventDefault();
 	
-	// Get the text the user entered
+	// Get the intention the user entered
 	var newItem = $('#newItem').val();
 
-	// window.location.assign("intention.html"); 
-
-		// Add an <li> with that text to the <ul>
+	// Display the user's intention
 	$('#todo').append(newItem);
 
+	// Hide the intention form
 	$(this).hide(); 
-}
 
-	// Store the quotes
-	var Quote = new Array();
-	Quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
-	Quote[1] = '"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they did not really do it, they just saw something. It seemed obvious to them after a while. That is because they were able to connect experiences they have had and synthesize new things." - Steve Jobs';
-	Quote[2] = '"Creativity is the process of having original ideas that have value. It is a process. It is not random." - Ken Robinson';
-	Quote[3] = '"The difference between science and the arts is not that they are different sides of the same coin even, or even different parts of the same continuum, but rather, they are manifestations of the same thing. The arts and sciences are avatars of human creativity." - Mae Jemison';
-	Quote[4] = '"Passion is one great force that unleashes creativity, because if you are passionate about something, then you are more willing to take risks." - Yo-Yo Ma';
-	Quote[5] = '"Creativity is a habit, and the best creativity is the result of good work habits." - Twyla Tharp';
-	Quote[6] = '"Everything that is created comes out of silence. Your thoughts emerge from the nothingness of silence. Your words come out of this void. Your very essence emerged from emptiness. All creativity requires some stillness." - Wayne Dyer';
-	Quote[7] = '"Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong."';
-	Quote[8] = '"I believe this passionately: that we do not grow into creativity, we grow out of it. Or rather, we get educated out if it." - Ken Robinson';
-	Quote[9] = '"Creativity is a spark. It can be excruciating when we are rubbing two rocks together and getting nothing. And it can be intensely satisfying when the flame catches and a new idea sweeps around the world." - Jonah Lehrer';
+	}
+
+	// Storing the quotes in an array
+	var quote = new Array();
+	quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
+	quote[1] = '"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they did not really do it, they just saw something. It seemed obvious to them after a while. That is because they were able to connect experiences they have had and synthesize new things." - Steve Jobs';
+	quote[2] = '"Creativity is the process of having original ideas that have value. It is a process. It is not random." - Ken Robinson';
+	quote[3] = '"The difference between science and the arts is not that they are different sides of the same coin even, or even different parts of the same continuum, but rather, they are manifestations of the same thing. The arts and sciences are avatars of human creativity." - Mae Jemison';
+	quote[4] = '"Passion is one great force that unleashes creativity, because if you are passionate about something, then you are more willing to take risks." - Yo-Yo Ma';
+	quote[5] = '"Creativity is a habit, and the best creativity is the result of good work habits." - Twyla Tharp';
+	quote[6] = '"Everything that is created comes out of silence. Your thoughts emerge from the nothingness of silence. Your words come out of this void. Your very essence emerged from emptiness. All creativity requires some stillness." - Wayne Dyer';
+	quote[7] = '"Children are happy because they do not have a file in their minds called All the Things That Could Go Wrong."';
+	quote[8] = '"I believe this passionately: that we do not grow into creativity, we grow out of it. Or rather, we get educated out if it." - Ken Robinson';
+	quote[9] = '"Creativity is a spark. It can be excruciating when we are rubbing two rocks together and getting nothing. And it can be intensely satisfying when the flame catches and a new idea sweeps around the world." - Jonah Lehrer';
 
 	// Randomly present the quotes
-	var randomQuote = Math.floor(Math.random()*Quote.length);
-	$('.quote_text').html(Quote[randomQuote]);
+	var randomQuote = Math.floor(Math.random()*quote.length);
+	$('.quote_text').html(quote[randomQuote]);
 
-	// Store the nicknames
-	var Nickname = new Array();
-	Nickname[0] = "Hey shorty. What's happenin.";
-	Nickname[1] = "Ugh morning ughhhhh coffeeeee neeeedd";
-	Nickname[2] = "Good morning, sunshine.";
-	Nickname[3] = "What's cookin' good lookin'";
-	Nickname[4] = "Aw. Hell. Naw.";
-	Nickname[5] = "Oh, you look so fresh and so fly.";
-	Nickname[6] = "So morning! So awake! Such ideas!";
+	// Storing the greetings in an array
+	var greeting = new Array();
+	greeting[0] = "Hey shorty. What's happenin.";
+	greeting[1] = "Ugh morning ughhhhh coffeeeee neeeedd";
+	greeting[2] = "Good morning, sunshine.";
+	greeting[3] = "What's cookin' good lookin'";
+	greeting[4] = "Aw. Hell. Naw.";
+	greeting[5] = "Oh, you look so fresh and so fly.";
+	greeting[6] = "So morning! So awake! Such ideas!";
 
-	// Randomly present the nicknames
-	var randomNickname = Math.floor(Math.random()*Nickname.length);
-	$('.nickname').html(Nickname[randomNickname]);
+	// Randomly present the greetings
+	var randomGreeting = Math.floor(Math.random()*greeting.length);
+	$('.greeting').html(greeting[randomGreeting]);
 
+	// Storing the mindfulness exercises in an array
 	var mindfulness = new Array();
 	mindfulness[0] = "Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go.";
 	mindfulness[1] = "Focus on an object nearby for a minute or two. Literally do nothing but look at it. Imagine you're seeing it for the first time, so really explore it. Think about its purpose, past, etc. See it differently than you perhaps do on any other day.";
@@ -58,59 +59,66 @@ $(document).ready(function() {
 	mindfulness[4] = "Pay attention to the details of an everyday activity. Don't rush through it. Try to see this familiar task in a new way.";
 	mindfulness[5] = "Write down five things in your day that usually go unappreciated. They can be objects, people, whatever. Think about how they came to be, what life would be like without them, their details, etc. Appreciate them throughout the day.";
 
+	// Randomly present the mindfulness exercises
 	var randomMindfulness = Math.floor(Math.random()*mindfulness.length);
 	$('.mindful_text').html(mindfulness[randomMindfulness]);
 
-
+	// Storing the background images in an array
 	var backgroundImage = new Array();
-	backgroundImage[0] = 'url(images/dino.jpg)';
-	backgroundImage[1] = 'url(images/dino_1.jpg)';
-	backgroundImage[2] = 'url(images/dino_2.jpg)';
-	backgroundImage[3] = 'url(images/dino_3.jpg)';
-	backgroundImage[4] = 'url(images/dino_4.jpg)';
-	backgroundImage[5] = 'url(images/dog_1.jpg)';
+	backgroundImage[0] = 'images/dino.jpg';
+	backgroundImage[1] = 'images/dino_1.jpg';
+	backgroundImage[2] = 'images/dino_2.jpg';
+	backgroundImage[3] = 'images/dino_3.jpg';
+	backgroundImage[4] = 'images/dino_4.jpg';
+	backgroundImage[5] = 'images/dog_1.jpg';
 
-	// Randomly present the nicknames
+	// Randomly present the background images
 	var randomBackgroundImage = Math.floor(Math.random()*backgroundImage.length);
-	$('.background_image').css('background-image' , backgroundImage[randomBackgroundImage]);
+	$('.background_image').attr('src', backgroundImage[randomBackgroundImage]);
 
 
-	// Look at the first item of Wired's xml file
+	// Look at the first item of Wired's design xml file
 	$.get('http://www.wired.com/category/design/feed/', function (data) {
 		var firstItemWiredOne = $(data).find("channel").find("item").first();
 
-	// Pull in the title of Wired's first item
+	// Pull in the title of the first item
 		$(".wiredLinkOne").append(firstItemWiredOne.find("title").text());
 
-	// Pull in the link of the Wired item
+	// Pull in the link of the item, make the title the link
 		var hrefWiredOne = $(".wiredLinkOne").attr("href");
 		$(".wiredLinkOne").attr("href", hrefWiredOne + (firstItemWiredOne.find("link").text()));
     });
 
-		// Look at the first item of Wired's xml file
-	$.get('http://www.wired.com/category/gear/feed/', function (data) {
+
+
+	// Look at the first item of Wired's gear xml file
+		$.get('http://www.wired.com/category/gear/feed/', function (data) {
 		var firstItemWiredTwo = $(data).find("channel").find("item").first();
 
-	// Pull in the title of Wired's first item
+	// Pull in the title of the first item
 		$(".wiredLinkTwo").append(firstItemWiredTwo.find("title").text());
 
-	// Pull in the link of the Wired item
+	// Pull in the link of the item, make the title the link
 		var hrefWiredTwo = $(".wiredLinkTwo").attr("href");
 		$(".wiredLinkTwo").attr("href", hrefWiredTwo + (firstItemWiredTwo.find("link").text()));
     });
 
-		// Look at the first item of Wired's xml file
+
+
+		// Look at the first item of Wired's photo xml file
 	$.get('http://www.wired.com/category/photo/feed/', function (data) {
 		var firstItemWiredThree = $(data).find("channel").find("item").first();
 
-	// Pull in the title of Wired's first item
+	// Pull in the title of the first item
 		$(".wiredLinkThree").append(firstItemWiredThree.find("title").text());
 
-	// Pull in the link of the Wired item
+	// Pull in the link of the item, make the title the link
 		var hrefWiredThree = $(".wiredLinkThree").attr("href");
 		$(".wiredLinkThree").attr("href", hrefWiredThree + (firstItemWiredThree.find("link").text()));
     });
 
+
+	// Storing the deeds in an array
 	var deed = new Array();
 	deed[0] = "be patient and kind to yourself.";
 	deed[1] = "TREAT YO SELF.";
@@ -147,43 +155,35 @@ $(document).ready(function() {
 	deed[33] = "take three deep breaths when you feel frustrated.";
 	deed[34] = "listen to a podcast.";
 
-	// Randomly present the nicknames
+	// Randomly present the deeds
 	var randomDeed = Math.floor(Math.random()*deed.length);
 	$('.deed_text').html(deed[randomDeed]);
 
 
-
-    /* Every time the window is scrolled ... */
+    // On scroll
     $(window).scroll( function() {
-
-       /* Every time the window is scrolled ... */
-    	$(window).scroll( function(){
     
-        /* Check the location of each desired element */
-        $('.fade2').each( function(i){
+    // Check the location of the section
+    $('.fade2').each( function(i){
             
-            var bottom_of_object = $(this).offset().top + ($(this).outerHeight() / 3.0);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        // Look at the current position of the element relative to the document 
+        var fade_trigger_point = $(this).offset().top + 100.0;
+
+        // Get the vertical position of the scroll bar and element
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
+        // If the object is visible in the window, fade it im
+        if( bottom_of_window > fade_trigger_point ){
+            $(this).animate({'opacity':'1'},500);        
             }
             
         }); 
     
     });
 	    
-	});
-
-
-
-
-
-
 });
+
+
 
 
 

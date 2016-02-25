@@ -3,18 +3,18 @@ body {
   font-family: 'Lora', serif;
   }
 
-
-}
 h1 {
   color: #FFF;
   }
 
-  .nickname {
+.greeting {
   color: #FFF;
   padding: 8%;
-  width: 50%;
+  width: 60%;
   font-size: 5em;
-
+  position:absolute;
+  left:0;
+  top:0;
   }
 
 h2 {
@@ -24,26 +24,22 @@ h2 {
 
 .reversed {
   color: white;
-}
-
+  }
 
 .background_image {
-  background-image: url("");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 700px;
-}
+  width:100%;
+  position:relative;
 
+  }
 
 #mindful {
   padding: 8%;
   }
 
-  .mindful_text {
-    width: 75%;
-    color: black;
+.mindful_text {
+  width: 75%;
+  color: black;
   }
-
 
 .quote_text {
   color: #fff;
@@ -51,22 +47,19 @@ h2 {
   width: 75%;
   }
 
-  .big_p {
+.big_p {
   font-size: 2.5em;
   }
 
-
-
-  #intention_form {
-    padding: 8%;
-
+#intention_form {
+  padding: 8%;
   }
 
 textarea {
   width:65%;
   height:300px;
   margin: auto;
-}
+  }
 
 #add {
   background-color: #2013AD;
@@ -77,27 +70,35 @@ textarea {
   font-size: 1.25em;
   border: none;
   border-radius: 5px;
-}
+  }
 
-.feedLink {
+  #add:hover {
+    background-color: #08236E;
+  }
+
+a.feedLink {
   font-size: 1.5em;
   color: #020D38;
-}
+  }
 
+
+a.feedLink:hover {
+  color: #0D3CBD;
+  text-decoration: none;
+  }
 
 p {
   font-size: 2em;
-}
+  }
 
 #deed {
   padding: 8%;
   background-color: #F20A6B;
   }
 
-  #rss {
+#rss {
     padding: 8%;
   }
-
 
 .fade2 {
   opacity: 0;
@@ -108,22 +109,108 @@ p {
   padding: 8%;
   }
 
-
 #todo {
     font-size: 4em;
     width: 75%;
     color: #F20A6B;
-    padding: 0 0 8% 8%;
-
-}
+    padding: 0 0 14% 8%;
+  } 
 
 hr {
-  color:black;
+  border-width: 1px;
+  border-color: #757B7D;
 }
 
+@media screen and (max-width:900px) and (min-width: 601px){
+
+  textarea {
+    width:100%;
+    }
+
+  .quote_text {
+    width: 100%;
+    }
+
+  .mindful_text {
+    width: 100%;
+    }
+
+  .greeting {
+    width: 60%;
+    position:absolute;
+    left:0;
+    top:0;
+    font-size: 4em;
+    }
 
 
+  .background_image {
+    width:100%;
+    position:relative;
+    }
 
+    #todo {
+    font-size: 3.5em;
+    width: 100%;
+  } 
 
+  }
 
+@media screen and (max-width: 600px){
+  body {
+    font-size: 1em;
+    }
+
+  h2 {
+    font-size: 3.25em;
+    line-height: 1.25;
+    }
+
+  textarea {
+    width:100%;
+    }
+
+  #add {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 2em;
+    border-radius: 8px;
+    }
+
+  .feedLink {
+    font-size: 1.75em;
+    }
+
+  .quote_text {
+    line-height: 1.5;
+    width: 100%;
+    }
+
+  .mindful_text {
+    width: 100%;
+    }
+
+  .greeting {
+    width: 60%;
+    position:absolute;
+    left:0;
+    top:0;
+    font-size: 3.85em;
+    }
+
+  .background_image {
+    width:100%;
+    position:relative;
+    }
+
+  #todo {
+    font-size: 3.5em;
+    width: 100%;
+    } 
+
+  #hello {
+    position:relative;
+  }
+
+  }
 
