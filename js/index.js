@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
 
+/*
+FORM
+*/
+
 	// Submitting an intention
 	$('#new_intention').on('submit', addNewItem);
 
@@ -19,6 +23,10 @@ $(document).ready(function() {
 
 	}
 
+/*
+QUOTES
+*/
+
 	// Storing the quotes in an array
 	var quote = new Array();
 	quote[0] = '"Without change there is no innovation, creativity, or incentive for improvement. Those who initiate change will have a better opportunity to manage the change that is inevitable." - William Pollard';
@@ -36,13 +44,17 @@ $(document).ready(function() {
 	var randomQuote = Math.floor(Math.random()*quote.length);
 	$('.quote_text').html(quote[randomQuote]);
 
+/*
+GREETINGS
+*/
+
 	// Storing the greetings in an array
 	var greeting = new Array();
-	greeting[0] = "Hey shorty. What's happenin.";
+	greeting[0] = "Hooray! Everything's the best.";
 	greeting[1] = "Ugh morning ughhhhh coffeeeee neeeedd";
 	greeting[2] = "Good morning, sunshine.";
 	greeting[3] = "What's cookin' good lookin'";
-	greeting[4] = "Aw. Hell. Naw.";
+	greeting[4] = "I can haz more sleep?";
 	greeting[5] = "Oh, you look so fresh and so fly.";
 	greeting[6] = "So morning! So awake! Such ideas!";
 
@@ -50,11 +62,15 @@ $(document).ready(function() {
 	var randomGreeting = Math.floor(Math.random()*greeting.length);
 	$('.greeting').html(greeting[randomGreeting]);
 
+/*
+MINDFULNESS
+*/	
+
 	// Storing the mindfulness exercises in an array
 	var mindfulness = new Array();
-	mindfulness[0] = "Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go.";
+	mindfulness[0] = "Picture a word that describes how you want to feel or who you want to be. Take a breath. Picture that word getting bigger and closer to you. Take a breath. Picture that word spreading over your body. Be that word. Go. Do it.";
 	mindfulness[1] = "Focus on an object nearby for a minute or two. Literally do nothing but look at it. Imagine you're seeing it for the first time, so really explore it. Think about its purpose, past, etc. See it differently than you perhaps do on any other day.";
-	mindfulness[2] = "Think about a simple part of every day, such as typing on your computer. When you're doing this, stop for minute and observe what the sounds are, how it feels, where you are, what the purpose of it is, etc. Be mindful of this activity throughout the day.";
+	mindfulness[2] = "Think about a simple part of every day, such as typing on your computer. When you're doing this, stop for a minute and observe what the sounds are, how it feels, where you are, what the purpose of it is, etc. Be mindful of this activity throughout the day.";
 	mindfulness[3] = "Open Spotify and play a song you've never heard before. Close your eyes. Listen closely to all the sounds and ignore your own judgements.";
 	mindfulness[4] = "Pay attention to the details of an everyday activity. Don't rush through it. Try to see this familiar task in a new way.";
 	mindfulness[5] = "Write down five things in your day that usually go unappreciated. They can be objects, people, whatever. Think about how they came to be, what life would be like without them, their details, etc. Appreciate them throughout the day.";
@@ -62,6 +78,10 @@ $(document).ready(function() {
 	// Randomly present the mindfulness exercises
 	var randomMindfulness = Math.floor(Math.random()*mindfulness.length);
 	$('.mindful_text').html(mindfulness[randomMindfulness]);
+
+/*
+IMAGES
+*/
 
 	// Storing the background images in an array
 	var backgroundImage = new Array();
@@ -76,6 +96,9 @@ $(document).ready(function() {
 	var randomBackgroundImage = Math.floor(Math.random()*backgroundImage.length);
 	$('.background_image').attr('src', backgroundImage[randomBackgroundImage]);
 
+/*
+RSS 1
+*/
 
 	// Look at the first item of Wired's design xml file
 	$.get('http://www.wired.com/category/design/feed/', function (data) {
@@ -89,7 +112,9 @@ $(document).ready(function() {
 		$(".wiredLinkOne").attr("href", hrefWiredOne + (firstItemWiredOne.find("link").text()));
     });
 
-
+/*
+RSS 2
+*/
 
 	// Look at the first item of Wired's gear xml file
 		$.get('http://www.wired.com/category/gear/feed/', function (data) {
@@ -103,7 +128,9 @@ $(document).ready(function() {
 		$(".wiredLinkTwo").attr("href", hrefWiredTwo + (firstItemWiredTwo.find("link").text()));
     });
 
-
+/*
+RSS 3
+*/
 
 		// Look at the first item of Wired's photo xml file
 	$.get('http://www.wired.com/category/photo/feed/', function (data) {
@@ -117,11 +144,14 @@ $(document).ready(function() {
 		$(".wiredLinkThree").attr("href", hrefWiredThree + (firstItemWiredThree.find("link").text()));
     });
 
+/*
+DEEDS
+*/
 
 	// Storing the deeds in an array
 	var deed = new Array();
-	deed[0] = "be patient and kind to yourself.";
-	deed[1] = "TREAT YO SELF.";
+	deed[0] = "say good morning to someone.";
+	deed[1] = "transfer money to your savings account.";
 	deed[2] = "get some fresh air and go for a walk.";
 	deed[3] = "get away from your desk during lunch.";
 	deed[4] = "post a thank you note on the Intranet.";
@@ -134,31 +164,22 @@ $(document).ready(function() {
 	deed[12] = "send a friend a message about a childhood memory.";
 	deed[13] = "reward yourself.";
 	deed[14] = "hide money in the pocket of a coat.";
-	deed[15] = "stretch your body.";
+	deed[15] = "drink eight glasses of water.";
 	deed[16] = "write down everything on your mind. Take a step back so you can take a fresh look.";
 	deed[17] = "send a note to the management team about something they are doing well.";
-	deed[18] = "give people the benefit of the doubt.";
+	deed[18] = "push the boundaries.";
 	deed[19] = "compliment a coworker.";
-	deed[20] = "write a note to your future self.";
-	deed[21] = "get some exercise.";
-	deed[22] = "go to bed before 10:30pm.";
-	deed[23] = "do your work efficiently. Leave work on time.";
-	deed[24] = "be on time all day today.";
-	deed[25] = "drink eight glasses of water.";
-	deed[26] = "encourage somebody.";
-	deed[27] = "listen and pay attention completely.";
-	deed[28] = "transfer money to your savings account.";
-	deed[29] = "be honest. Speak up.";
-	deed[30] = "commit to getting a task done.";
-	deed[31] = "push the boundaries.";
-	deed[32] = "say good morning to someone.";
-	deed[33] = "take three deep breaths when you feel frustrated.";
-	deed[34] = "listen to a podcast.";
+	deed[20] = "go to bed before 10:30pm.";
+	deed[21] = "do your work efficiently. Leave work on time.";
+	deed[22] = "be on time all day today.";
 
 	// Randomly present the deeds
 	var randomDeed = Math.floor(Math.random()*deed.length);
 	$('.deed_text').html(deed[randomDeed]);
 
+/*
+SCROLL FADE
+*/
 
     // On scroll
     $(window).scroll( function() {

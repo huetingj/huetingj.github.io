@@ -29,7 +29,6 @@ h2 {
 .background_image {
   width:100%;
   position:relative;
-
   }
 
 #mindful {
@@ -72,8 +71,8 @@ textarea {
   border-radius: 5px;
   }
 
-  #add:hover {
-    background-color: #08236E;
+#add:hover {
+  background-color: #08236E;
   }
 
 a.feedLink {
@@ -81,8 +80,12 @@ a.feedLink {
   color: #020D38;
   }
 
-
 a.feedLink:hover {
+  color: #0D3CBD;
+  text-decoration: none;
+  }
+
+a.feedLink:visited {
   color: #0D3CBD;
   text-decoration: none;
   }
@@ -97,12 +100,12 @@ p {
   }
 
 #rss {
-    padding: 8%;
+  padding: 8%;
   }
 
 .fade2 {
   opacity: 0;
-}
+  }
 
 #quote {
   background-color: #FA7F05;
@@ -110,16 +113,16 @@ p {
   }
 
 #todo {
-    font-size: 4em;
-    width: 75%;
-    color: #F20A6B;
-    padding: 0 0 14% 8%;
+  font-size: 4em;
+  width: 75%;
+  color: #F20A6B;
+  padding: 0 0 14% 8%;
   } 
 
 hr {
   border-width: 1px;
   border-color: #757B7D;
-}
+  }
 
 @media screen and (max-width:900px) and (min-width: 601px){
 
@@ -143,7 +146,6 @@ hr {
     font-size: 4em;
     }
 
-
   .background_image {
     width:100%;
     position:relative;
@@ -152,7 +154,7 @@ hr {
     #todo {
     font-size: 3.5em;
     width: 100%;
-  } 
+    } 
 
   }
 
