@@ -98,7 +98,7 @@ IMAGES
 
 /*
 RSS 1
-
+*/
 
 	// Look at the first item of Wired's design xml file
 	$.get('http://www.wired.com/category/design/feed/', function (data) {
@@ -113,7 +113,9 @@ RSS 1
     });
 
 
+/*
 RSS 2
+*/
 
 
 	// Look at the first item of Wired's gear xml file
@@ -129,7 +131,9 @@ RSS 2
     });
 
 
+/*
 RSS 3
+*/
 
 
 		// Look at the first item of Wired's photo xml file
@@ -143,7 +147,6 @@ RSS 3
 		var hrefWiredThree = $(".wiredLinkThree").attr("href");
 		$(".wiredLinkThree").attr("href", hrefWiredThree + (firstItemWiredThree.find("link").text()));
     });
- */
 
 /*
 DEEDS
